@@ -621,11 +621,17 @@ ul:not([class]) li:before {
   margin-bottom: 5rem;
 }
 
+section {
+  padding-top: var(--indentBlocks);
+  padding-bottom: var(--indentBlocks);
+}
+
 .section-header {
   margin-top: 0;
-  font-size: 3.2rem;
-  line-height: 1.2;
-  font-weight: 600;
+  font-family: var(--font-02);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.3;
   text-transform: uppercase;
 }
 @media screen and (max-width: 992px) {

@@ -119,12 +119,14 @@ ul:not([class]) {
 	margin-bottom: 5rem;
 }
 
+section {
+	padding-top: var(--indentBlocks);
+	padding-bottom: var(--indentBlocks);
+}
+
 .section-header {
 	margin-top: 0;
-
-	font-size: 3.2rem;
-	line-height: 1.2;
-	font-weight: 600;
+	@include h1;
 	text-transform: uppercase;
 
 	@media screen and (max-width: $break_md) {

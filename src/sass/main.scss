@@ -7,7 +7,7 @@
 
 // Смартгрид и свои миксины
 // @import '_smart-grid';
-// @import '_mixins/mixins'; // свои миксины
+@import '_mixins/mixins'; // свои миксины
 
 // Шрифты
 // @import "_fonts";
@@ -21,6 +21,7 @@
 @import "_burger";
 @import "_header";
 @import "_hero";
+@import "_popular-services";
 
 
 // Стили текущего проекта
