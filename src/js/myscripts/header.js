@@ -1,10 +1,13 @@
-const headerFixed = () => {
-    if (document.documentElement.clientWidth <= 992) {
-        const heightHeader = document.querySelector('.header').offsetHeight; // высота хедера
-        document.body.style.paddingTop = heightHeader + 'px';
-    } else {
-        document.body.style.paddingTop = 0;
-    }
+const headerFixed = function() {
+    if (document.querySelector('.header')) {
+        const header = document.querySelector('.header');
+        const heightHeader = header.offsetHeight; // высота хедера
+        
+        let padTop = 0;
+        padTop = parseInt(window.getComputedStyle(header.parentElement, null).getPropertyValue('padding-top')); // padding-top родителя
+        
+        header.parentElement.style.paddingTop = heightHeader + padTop + 'px'; // даем родителю нужный отступ
+    };
 };
 
 headerFixed();

@@ -5,43 +5,43 @@
 }
 
 @mixin h1 {
-    font-family: var(--font-02);
-    font-size: 50px;
     font-weight: 500;
+    font-size: 50px;
     line-height: 1.3;
+    font-family: var(--font-02);
 }
 
 @mixin h2 {
-    font-family: var(--font-02);
-    font-size: 34px;
     font-weight: 500;
+    font-size: 34px;
     line-height: 1.3;
+    font-family: var(--font-02);
 }
 
 @mixin h3 {
-    font-family: var(--font-02);
-    font-size: 26px;
     font-weight: 500;
+    font-size: 26px;
     line-height: 1.3;
+    font-family: var(--font-02);
 }
 
 @mixin h2-mob {
-    font-family: var(--font-02);
-    font-size: 22px;
     font-weight: 500;
+    font-size: 22px;
     line-height: 1.3;
+    font-family: var(--font-02);
 }
 
 @mixin h1-mob {
-    font-family: var(--font-02);
-    font-size: 26px;
     font-weight: 500;
+    font-size: 26px;
     line-height: 1.3;
+    font-family: var(--font-02);
 }
 
 @mixin h2-mob {
-    font-family: var(--font-02);
-    font-size: 22px;
     font-weight: 500;
+    font-size: 22px;
     line-height: 1.3;
+    font-family: var(--font-02);
 }

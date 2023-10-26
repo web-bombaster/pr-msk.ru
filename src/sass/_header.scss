@@ -2,11 +2,18 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
+    // position: absolute;
     position: fixed;
+    z-index: 110;
     top: 0;
     left: 0;
     width: 100%;
 
+    &.toogle {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(25, 26, 48, 0.15);
+    }
+    
     @media screen and (max-width: 992px) {
         background-color: #fff;
         box-shadow: 0px 4px 8px 0px rgba(25, 26, 48, 0.15);
@@ -111,12 +118,24 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 4px 24px;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 .header-menu__item {
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
 }
 .header-menu__link {
     padding-top: 6px;
     padding-bottom: 6px;
+
+    @media screen and (max-width: 600px) {
+        display: inline-flex;
+    }
 }
 .header-contacts {
     flex-grow: 2;

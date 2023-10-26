@@ -1,32 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-	console.log('DOM готов!')
-	function loadData() {
-	return new Promise((resolve, reject) => {
-	  	// setTimeout не является частью решения
-	  	// Код ниже должен быть заменен на логику подходящую для решения вашей задачи
-		setTimeout(resolve, 100);
-	})
-};
-
-loadData()
-	.then(() => {
-		let preloaderEl = document.getElementById('preloader');
-		preloaderEl.classList.add('hidden');
-		preloaderEl.classList.remove('visible');
-	});if (document.querySelector('.js-burger')) {
-
-    const btnBurger = document.querySelectorAll('.js-burger');
-
-    // Открыть / закрыть бургер по клику на него
-    function btnBurgerToggle(e) {
-        e.target.classList.toggle('toggle');
-    }
-
-    btnBurger.forEach(element => {
-        element.addEventListener("click", btnBurgerToggle);
-        // window.addEventListener("resize", btnBurgerToggleClassRemove);
-    });
-}if (document.querySelector('.jsMobileMenuBtnToggle')) {
+if (document.querySelector('.jsMobileMenuBtnToggle')) {
 
     let menuPanelInit = function () {
         const menuBtn = document.querySelector('.jsMobileMenuBtnToggle');
@@ -103,39 +75,4 @@ loadData()
 
     menuPanelInit();
 
-};// функция будет перемещать блок в указанное место при определенной ширине экрана
-
-let moving = function () {
-
-    const windowWidth = window.innerWidth; // ширина экрана
-    // console.log(windowWidth);
-
-    if (windowWidth <= 600) {
-        document.querySelector('.mobile-menu__wrapper').prepend(document.querySelector('.header-menu'));
-    } else {
-        document.querySelector('.header-nav').append(document.querySelector('.header-menu'));
-    };
 };
-
-moving();
-window.addEventListener('resize', moving);const headerFixed = function() {
-    if (document.querySelector('.header')) {
-        const header = document.querySelector('.header');
-        const heightHeader = header.offsetHeight; // высота хедера
-        
-        let padTop = 0;
-        padTop = parseInt(window.getComputedStyle(header.parentElement, null).getPropertyValue('padding-top')); // padding-top родителя
-        
-        header.parentElement.style.paddingTop = heightHeader + padTop + 'px'; // даем родителю нужный отступ
-    };
-};
-
-headerFixed();
-// запускаем headerFixed при ресайзе
-window.addEventListener("resize", headerFixed);// -include './myscripts/form.js'
-	// -include './myscripts/accordeon.js'
-	// -include './myscripts/initSwiper.js'
-	// -include './myscripts/blazy-init.js'
-  })
-
-
