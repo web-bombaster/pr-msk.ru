@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	// include './myscripts/mobileMenuPanel.js'
 	// include './myscripts/moving.js'
 	// include './myscripts/header.js'
+	// include './myscripts/initSwiper.js'
 	// -include './myscripts/form.js'
 	// -include './myscripts/accordeon.js'
-	// -include './myscripts/initSwiper.js'
 	// -include './myscripts/blazy-init.js'
   })
 

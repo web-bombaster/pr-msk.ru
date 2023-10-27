@@ -3,81 +3,51 @@
 
 function initSwiper() {
 
-	if (document.querySelector('.jsHeroSlider')) {
-		const prodSliderInner = new Swiper('.jsHeroSlider', {
+	if (document.querySelector('.reviews-slider')) {
+		const prodSliderInner = new Swiper('.reviews-slider', {
 			spaceBetween: 20,
 			slidesPerView: 1,
 			loop: true,
+			autoHeight: false,
+			breakpoints: {
+				600: {
+					slidesPerView: 2,
+					// pagination: false,
+				},
+			},
 			pagination: {
-				el: ".hero-slider__pagination",
-			},
-			navigation: {
-				nextEl: ".hero-slider__next",
-				prevEl: ".hero-slider__prev",
+				el: ".reviews-slider__pagination",
 			},
 		});
 	};
 
-	if (document.querySelector('.jsProductsListSlider')) {
-		const prodSliderInner = new Swiper('.jsProductsListSlider', {
-			spaceBetween: 10,
-			slidesPerView: 1,
+	if (document.querySelector('.company-slider')) {
+		const prodSliderInner = new Swiper('.company-slider', {
+			spaceBetween: 16,
+			slidesPerView: 2,
 			loop: true,
+			autoHeight: false,
 			breakpoints: {
-				500: {
-					slidesPerView: 2,
-					spaceBetween: 10,
-					loop: true,
-				},
-				768: {
+				600: {
 					slidesPerView: 3,
-					spaceBetween: 20,
-					loop: true,
+					// pagination: false,
 				},
-				1401: {
+				900: {
 					slidesPerView: 4,
-					spaceBetween: 20,
-					loop: true,
+					// pagination: false,
 				},
-			},
-			navigation: {
-				nextEl: ".products-list__next",
-				prevEl: ".products-list__prev",
-			},
-		});
-	};
-
-	if (document.querySelector('.jsBrandsList')) {
-		const brandsList = new Swiper('.jsBrandsList', {
-			// slidesPerView: 5,
-			loop: true,
-			spaceBetween: 20,
-			autoplay: {
-				delay: 2500,
-			},
-			navigation: {
-				nextEl: '.brands__button-next',
-				prevEl: '.brands__button-prev',
-			},
-
-			breakpoints: {
-				319: {
-					slidesPerView: 2,
-				},
-
-				767: {
-					slidesPerView: 3,
-				},
-
-				991: {
-					slidesPerView: 4,
-				},
-				1199: {
+				1360: {
 					slidesPerView: 5,
+					// pagination: false,
 				},
+			},
+			pagination: {
+				el: ".company-slider__pagination",
 			},
 		});
 	};
+
+
 };
 
 // window.addEventListener("resize", initSwiper);

@@ -1,0 +1,14 @@
+
+
+.light {
+    margin-top: 20px;
+    text-align: center;
+
+    .swiper-pagination-bullet {
+        background-color:  #6D6E85 !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-accent) !important;
+    }
+}
