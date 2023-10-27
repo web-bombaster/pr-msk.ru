@@ -8,9 +8,14 @@
     }
 }
 .hero_container {
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 992px) {
+        padding-top: 40px;
+    }
 
     @media screen and (max-width: 600px) {
         flex-direction: column;

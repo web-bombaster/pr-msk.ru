@@ -1,0 +1,30 @@
+section.request
+    .container.request__container
+        .request-box
+            .request-box__text.request-text
+                h2.section-header Есть вопросы или Хотите сделать заказ?
+                ul.request-info
+                    li Москва, 2-я кабельная д.2
+                    li 
+                        a(href="tel:+74952808280") +7 (495) 280 82 80
+                    li 
+                        a(href="mailto:info@pr-msk.ru") info@pr-msk.ru
+                a(href="#").request-text__whatsapp
+                    img(src="img/svg/whatsapp-fill.svg", alt="")
+            form(action="#").request-box__form.request-form
+                .request-form__columns
+                    label
+                        input(type="text" name="name" placeholder="Ваше имя")
+                    label
+                        input(type="email" name="email" placeholder="E-mail")
+                    label
+                        input(type="tel" name="phone" placeholder="Номер телефона").error
+                    label.request-form__file
+                        input(type="file", name="file")
+                        span Прикрепить файл
+                label
+                    input(type="text", name="comment" placeholder="Комментарий")
+
+                button(type="submit").request-form__btn.btn Отправить
+
+                p.request-form__agree Нажимая кнопку “Отправить”, я даю согласие на <a href="#">обработку своих персональных данных</a> и соглашаюсь с Условиями использования и Политикой конфиденциальности
