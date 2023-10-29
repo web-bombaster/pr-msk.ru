@@ -3,65 +3,65 @@
 @use "sass:math";
 
 html {
-    font-size: 10px;
-    text-rendering: auto;
+	font-size: 10px;
+	text-rendering: auto;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: var(--color-accent) #191a30;
-  }
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: var(--color-accent) #191a30;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 6px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 6px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #191a30;
-  }
+*::-webkit-scrollbar-track {
+	background: #191a30;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--color-accent);
-    border-radius: 10px;
-    border: none;
-  }
+*::-webkit-scrollbar-thumb {
+	background-color: var(--color-accent);
+	border-radius: 10px;
+	border: none;
+}
 
 body {
-    display: flex;
+	display: flex;
 
-    position: relative;
-    flex-direction: column;
+	position: relative;
+	flex-direction: column;
 
-    box-sizing: border-box;
-    min-width: 32rem;
-    min-height: 100vh;
+	box-sizing: border-box;
+	min-width: 32rem;
+	min-height: 100vh;
 
-    overflow-x: hidden;
+	overflow-x: hidden;
 
-    color: var(--color-text);
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.5;
+	color: var(--color-text);
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.5;
 
-    /*Перенос длинных слов*/
-    font-family: var(--font-01);
-    word-wrap: break-word;
+	/*Перенос длинных слов*/
+	font-family: var(--font-01);
+	word-wrap: break-word;
 
 	overflow-wrap: break-word;
 
-    &.toggle {
-        height: 100vh;
-        overflow-y: hidden;
-    }
+	&.toggle {
+		height: 100vh;
+		overflow-y: hidden;
+	}
 }
 
 .visually-hidden {
@@ -108,16 +108,16 @@ ul:not([class]) {
 
 	li {
 		position: relative;
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 
 		&:before {
 			position: absolute;
-			top: .8rem;
+			top: 0.8rem;
 			left: -1.5rem;
-			width: .6rem;
-			height: .6rem;
+			width: 0.6rem;
+			height: 0.6rem;
 			border-radius: 50%;
-			content: '';
+			content: "";
 			background-color: var(--color-text);
 		}
 	}
@@ -176,8 +176,6 @@ section {
 	}
 }
 
-
-
 h3:not([class]) {
 	margin-top: 4rem;
 	margin-bottom: 1.5rem;
@@ -185,7 +183,7 @@ h3:not([class]) {
 	font-weight: 600;
 	font-size: 3.2rem;
 	line-height: 1.18;
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 .hidden-text {
@@ -220,7 +218,8 @@ h3:not([class]) {
 	}
 }
 
-.swiper__prev, .swiper__next {
+.swiper__prev,
+.swiper__next {
 	z-index: 1;
 	position: absolute;
 	top: 50%;
@@ -230,12 +229,12 @@ h3:not([class]) {
 	cursor: pointer;
 
 	background-color: rgba(254, 254, 254, 0.9);
-	background-image: url('../img/icons/arrow.svg');
+	background-image: url("../img/icons/arrow.svg");
 	background-repeat: no-repeat;
 
 	background-position: center;
 
-	box-shadow: rem rem .3rem rem #b3b3b3;
+	box-shadow: rem rem 0.3rem rem #b3b3b3;
 	transform: translateY(-50%);
 
 	@media screen and (max-width: $break_sm) {
@@ -262,7 +261,7 @@ h3:not([class]) {
 }
 
 .swiper-button-disabled {
-	opacity: .5;
+	opacity: 0.5;
 	cursor: auto;
 }
 
@@ -282,4 +281,3 @@ h3:not([class]) {
 		text-decoration: underline;
 	}
 }
-
