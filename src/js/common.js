@@ -9,6 +9,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	// -include './myscripts/form.js'
 	// -include './myscripts/accordeon.js'
 	// -include './myscripts/blazy-init.js'
-  })
-
-
+})
