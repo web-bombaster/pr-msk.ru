@@ -19,6 +19,15 @@
 
 	transition: background-color .25s, color .25s, transform .25s;
 	cursor: pointer;
+
+	@media screen and (max-width: 768px) {
+		font-size: 14px;
+	}
+
+	&.btn--dark {
+		background-color: var(--color-text);
+		color: #fff;
+	}
 }
 
 .btn:hover:not(:disabled) {

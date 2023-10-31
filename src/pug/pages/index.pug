@@ -3,7 +3,11 @@
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'index';
+- var pageType = 'detail';
+
+//- detail - Детальная страница услуги
+if pageType === 'detail'
+	include detail
 
 //- contacts - страница Контакты
 if pageType === 'contacts'

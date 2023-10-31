@@ -1,0 +1,21 @@
+include ../includes/mixins
+
+doctype html
+html(lang="ru-RU")
+    include ../includes/head
+    body
+        include ../includes/preloader
+        include ../includes/header
+        
+        include ../includes/subheader-02
+        .container
+            .main-columns
+                .main-columns__left
+                    include ../includes/products-menu
+                .main-columns__right
+                    main.content
+                        include ../includes/products-detail
+        include ../includes/reviews
+        include ../includes/request
+        include ../includes/footer
+        include ../includes/mobile-menu
