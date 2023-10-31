@@ -2988,6 +2988,11 @@ h3:not([class]) {
     padding: 33px 27% 33px 38px;
   }
 }
+@media screen and (max-width: 480px) {
+  .content-action__text {
+    padding: 33px 17% 20% 38px;
+  }
+}
 
 .content-action__title {
   margin-top: 0;
