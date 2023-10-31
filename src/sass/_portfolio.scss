@@ -51,9 +51,15 @@
 		max-width: 48%;
 	}
 
+	@media screen and (max-width: 768px) {
+		font-size: 14px;		
+	}
+
 	@media screen and (max-width: 600px) {
 		max-width: 100%;
 	}
+
+
 }
 .portfolio-grid__box {
 	overflow: hidden;

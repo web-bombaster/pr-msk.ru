@@ -1,0 +1,140 @@
+.hero {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-color: var(--color-accent);
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    padding-top: 120px;
+  }
+}
+
+.hero_container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .hero_container {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero_container {
+    flex-direction: column;
+    align-items: initial;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-box {
+    max-width: 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-box {
+    max-width: initial;
+  }
+}
+
+.hero-box__subtitle {
+  display: inline-flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+@media screen and (max-width: 480px) {
+  .hero-box__subtitle {
+    font-size: 14px;
+    max-width: 200px;
+  }
+}
+
+.hero-box__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: var(--font-02);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  .hero-box__title {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-box__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-box__title {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-box__title {
+    max-width: 310px;
+    font-size: 26px;
+  }
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hero-tags__item {
+  padding: 14px 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--color-text);
+  border-radius: 30px;
+}
+@media screen and (max-width: 992px) {
+  .hero-tags__item {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+.hero-tags__item:nth-child(2n) {
+  background-color: #4646B6;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-img {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero-img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero-img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-img {
+    width: 250px;
+    align-self: flex-end;
+  }
+}
+
+.hero-img__pc {
+  display: block;
+}
+
+.hero-img__mobile {
+  display: none;
+}

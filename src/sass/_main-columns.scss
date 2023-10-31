@@ -1,0 +1,39 @@
+.main-columns {
+    padding-top: 50px;
+    padding-bottom: var(--indentBlocks);
+
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.main-columns__left {
+    width: 310px;
+
+    @media screen and (max-width: 992px) {
+        width: 240px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+.main-columns__right {
+    width: calc(100% - 310px - 60px);
+
+    @media screen and (max-width: 992px) {
+        width: calc(100% - 240px - 20px);
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}

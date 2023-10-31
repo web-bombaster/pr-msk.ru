@@ -8,10 +8,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    
+    box-shadow: 0px 4px 8px 0px rgba(25, 26, 48, 0.15);
 
     &.toogle {
         background-color: #fff;
-        box-shadow: 0px 4px 8px 0px rgba(25, 26, 48, 0.15);
+    }
+
+    .hero & {
+        box-shadow: initial;
     }
     
     @media screen and (max-width: 992px) {

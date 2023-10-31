@@ -1,0 +1,120 @@
+.products-list {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+
+    @media screen and (max-width: 992px) {
+        gap: 20px;
+    }
+}
+.products-list__item {
+}
+.product-item {
+	display: flex;
+	background-color: #f8f8f8;
+	box-shadow: box-shadow initial;
+
+	transition: 0.25s;
+    overflow: hidden;
+
+	&:hover {
+		box-shadow: 0px 4px 8px 0px rgba(97, 97, 132, 0.28);
+
+        .product-info__title {
+            color: #4646b6;
+        }
+
+        .product-item__link {
+            &::before {
+                filter: initial;
+            }
+        }
+
+	}
+}
+.product-item__link {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 25px;
+		bottom: 25px;
+
+		width: 30px;
+		height: 30px;
+
+		background-image: url("../img/svg/arrow.svg");
+		background-size: cover;
+        background-position: center;
+
+        filter: grayscale(100%);
+	}
+}
+.product-item__info {
+	padding: 25px 25px 56px;
+}
+.product-info {
+	// display: flex;
+	// align-self: flex-start;
+	// gap: 13px;
+}
+.product-info__title {
+    margin-right: 13px;
+	font-family: var(--font-02);
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1.3;
+	text-transform: uppercase;
+
+    transition: color .25s;
+
+    @media screen and (max-width: 992px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+.product-info__sale {
+	padding: 2px 7px;
+
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+
+	font-family: var(--font-02);
+	font-weight: 500;
+	line-height: 1.3;
+	font-size: 14px;
+
+	color: #fff;
+	background-color: #4646b6;
+
+    height: 27px;
+    vertical-align: super;
+}
+.product-item__img {
+	position: relative;
+	width: 254px;
+	height: 154px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 768px) {
+        width: 146px;
+        height: 110px;
+    }
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

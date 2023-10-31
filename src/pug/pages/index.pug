@@ -3,8 +3,15 @@
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'home';
+- var pageType = 'contacts';
 
+//- contacts - страница Контакты
+if pageType === 'contacts'
+	include contacts
+	
+//- products - страница Продукция
+if pageType === 'products'
+	include products
 
 //- home - главная страница
 if pageType === 'home'

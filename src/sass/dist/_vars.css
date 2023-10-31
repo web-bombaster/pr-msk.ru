@@ -1,0 +1,13 @@
+:root {
+  --color-text: #191A30;
+  --color-accent: #DCF159;
+  --color-accent2: #4646B6;
+  --font-01: "Inter", sans-serif;
+  --font-02: "Oswald", sans-serif;
+  --indentBlocks: 14rem;
+}
+@media (max-width: 1200px) {
+  :root {
+    --indentBlocks: 4rem;
+  }
+}

@@ -1,0 +1,182 @@
+.request {
+  padding-bottom: 250px;
+}
+@media screen and (max-width: 1200px) {
+  .request {
+    padding-bottom: 140px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .request {
+    padding-bottom: var(--indentBlocks);
+  }
+}
+
+.request-box {
+  display: flex;
+  gap: 120px;
+}
+@media screen and (max-width: 1200px) {
+  .request-box {
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .request-box {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .request-box {
+    flex-direction: column;
+  }
+}
+
+.request-text {
+  flex-shrink: 0;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 992px) {
+  .request-text {
+    width: 285px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .request-text {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .request-text {
+    width: 100%;
+  }
+}
+.request-text .section-header {
+  margin-bottom: 0;
+}
+
+.request-info {
+  font-size: 18px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .request-info {
+    font-size: 16px;
+  }
+}
+.request-info a {
+  text-decoration: none;
+}
+
+.request-text__whatsapp img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 600px) {
+  .request-text__whatsapp img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .request-form {
+    gap: 30px;
+  }
+}
+.request-form input {
+  padding: 12px 0;
+  border: 0;
+  border-bottom: 2px solid #191A30;
+  width: 100%;
+  height: 50px;
+}
+.request-form input:focus {
+  outline: none;
+  border-bottom: 2px solid #4646b6;
+  background-color: #f9f9f9;
+}
+.request-form input.error {
+  border-bottom: 2px solid red;
+}
+.request-form input.error::placeholder {
+  color: red;
+}
+.request-form input[type=file] {
+  position: fixed;
+  transform: scale(0);
+}
+.request-form input[type=file] + * {
+  display: flex;
+}
+.request-form input[type=file]:focus + * {
+  border-bottom: 2px solid #4646b6;
+}
+
+.request-form__columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 40px;
+}
+@media screen and (max-width: 768px) {
+  .request-form__columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.request-form__columns > * {
+  width: calc(50% - 20px);
+}
+@media screen and (max-width: 768px) {
+  .request-form__columns > * {
+    width: 100%;
+  }
+}
+
+.request-form__file {
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4646B6;
+}
+@media screen and (max-width: 600px) {
+  .request-form__file {
+    font-size: 16px;
+  }
+}
+.request-form__file::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  background-image: url("../img/svg/attach.svg");
+  background-size: cover;
+}
+
+.request-form__agree {
+  margin-top: -40px;
+  font-size: 14px;
+  color: #828282;
+}
+@media screen and (max-width: 768px) {
+  .request-form__agree {
+    margin-top: -20px;
+    font-size: 12px;
+  }
+}
