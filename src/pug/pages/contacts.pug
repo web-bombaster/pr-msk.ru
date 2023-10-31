@@ -9,12 +9,26 @@ html(lang="ru-RU")
         main
             include ../includes/subheader-03
             .container
-                .main-columns
-                    .main-columns__left
-                        include ../includes/products-menu
-                    .main-columns__right
-                        include ../includes/products-list
-        include ../includes/reviews
+                .contacts-columns
+                
+                    .contacts-columns__left
+                        .contacts-info
+                            p.contacts-info__title Давайте обсудим ваш проект
+                            a.contacts-info__phone(href="tel:84952808280") +7 (495) 280 82 80
+                            a.contacts-info__mail(href="mailto:info@pr-msk.ru") info@pr-msk.ru
+                            p.contacts-info__address Москва, ул 2-ая Кабельная д.2
+
+                        .contacts-social
+                            a.contacts-social__link(href="#")
+                                img.contacts-social__icon(src="img/svg/contacts-social-icon-01.svg", alt="")
+                            a.contacts-social__link(href="#")
+                                img.contacts-social__icon(src="img/svg/contacts-social-icon-02.svg", alt="")
+
+                    .contacts-columns__right
+                        .contacts-map
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A60ebbd07c159b2cdad9e6f9d4fded76ee74d1db89356054b0b96310c8b0658fe&amp;source=constructor" width="100%" height="100%" frameborder="0" loading="lazy"></iframe>
+                        
+        //- include ../includes/reviews
         include ../includes/request
         include ../includes/footer
         include ../includes/mobile-menu

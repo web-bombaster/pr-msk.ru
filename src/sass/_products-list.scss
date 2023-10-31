@@ -52,10 +52,31 @@
         background-position: center;
 
         filter: grayscale(100%);
+
+		@media screen and (max-width: 768px) {
+			left: 20px;
+			bottom: 20px;
+		}
+
+		@media screen and (max-width: 480px) {
+			left: 15px;
+			bottom: 15px;
+
+			width: 24px;
+			height: 24px;
+		}
 	}
 }
 .product-item__info {
 	padding: 25px 25px 56px;
+
+	@media screen and (max-width: 768px) {
+		padding: 20px 20px 56px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding: 15px 15px 56px;
+	}
 }
 .product-info {
 	// display: flex;
